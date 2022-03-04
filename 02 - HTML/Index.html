@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Bakery piece of heaven</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+            /* Estilo de header */
+            header {
+            background-color: rgb(112, 11, 70);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(88, 0, 0);
+        }
+          /* Crear 2 columnas con la misma posición en la fila */
+          nav {
+            float: left;
+            width: 40%;
+            height: 250px;
+            /* only for demonstration, should be removed */
+            background: rgb(226, 52, 29);
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #380724;
+            height: 250px;
+            color: white;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(112, 5, 68);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!---headings-->
+    <header>
+    <h2>Piece of Heaven</h2>
+    <!--parrrafos-->
+    <p>Arme el pastel ideal <br>Somos los mejores</p>
+    <form action="./admin1.html" id="form2" method="post">
+        <input type="submit" value="Login as administrator">
+    </form>
+</header>
+   <section><nav>
+    <h3>Sabores a elegir</h3>
+    <table>
+    <tr>
+        <th><img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="chocolatepastel" width="140px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="mermeladapastel" width="140px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/2684556/pexels-photo-2684556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="vainillapastel" widtj="140px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="fresapastel" width="140px" height="120px"></th>   
+    </tr>
+        <td>Chocolate $20</td>
+        <td>Mermelada $30</td>
+        <td>Vainilla $25</td>
+        <td>Fresa $27</td>
+    </tr>
+    </table>
+</nav><article>
+    <h3>Combine sus sabores si así lo desea</h3>
+    <input type="checkbox" id="topping1" name="topping_test" value="Chocolate">
+    <label for="topping1">Chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Mermelada">
+    <label for="topping2">Mermelada</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Vainilla</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Fresa">
+    <label for="topping3">Fresa</label><br>
+</article>
+</section>
+<section><nav>
+    <h3>Decoraciones a elegir</h3>
+    <table>
+        <th><img src="https://images.pexels.com/photos/265801/pexels-photo-265801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ingredientechocolate" width="140px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/4110006/pexels-photo-4110006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="ingredienteChantilly" width="100px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/8308187/pexels-photo-8308187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ingredienteVainilla" width="155px" height="120px"></th>
+        <th><img src="https://images.pexels.com/photos/6605346/pexels-photo-6605346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ingredienteMerengue" width="130px" height="120px"></th>
+    <tr>
+        <td>Fondant $10</td>
+        <td>Chantilly $12</td>
+        <td>Vainilla $15</td>
+        <td>Merengue $20</td>
+    </tr>
+</table>
+</nav><article>
+    <h3>Combine sus decoraciones si así lo desea</h3>
+    <input type="checkbox" id="topping5" name="topping5" value="Fondant">
+    <label for="topping5">Fondant</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Chantilly">
+    <label for="topping6">Chantilly</label><br>
+    <input type="checkbox" id="topping7" name="topping7" value="Vainilla">
+    <label for="topping3">Vainilla</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Merengue">
+    <label for="topping3">Merengue</label><br><br><br>
+
+    <form action="./page1.html" id="form1" method="post">
+        <input type="submit"><br>
+    </form>
+</article>
+</section>
+    <footer>
+        <p>Dirección: Calle Balderas #27, Centro Histórico, Ciudad de México, Del. Cuauhtémoc, C.P. 06040, México.</p>
+        <p>Teléfono: 01 800 200 2000.</p>
+        <p>Horarios de atención</p>
+        <p> Lunes de 8:00 am a 5:00 pm</p>
+        <p>Sábados: 8:00 am a 12:00 pm</p>
+    </footer>
+</body>
+</html>

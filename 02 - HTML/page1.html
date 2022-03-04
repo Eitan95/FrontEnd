@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Piece of heaven</title>
+    <style>
+          * {
+            box-sizing: border-box;
+        }
+        body { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /*Estilo header*/
+        header{
+            background-color: rgb(112, 11, 70);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(88, 0, 0);
+        }
+        nav {
+            float: left;
+            width: 40%;
+            height: 350px;
+            /* only for demonstration, should be removed */
+            background: rgb(226, 52, 29);
+            padding: 20px;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #380724;
+            height: 350px;
+            color: white;
+        }
+        /*Section footer*/
+        footer{
+            background-color: rgb(125, 5, 68);
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+           /* Responsive layout */
+           @media (max-width: 600px) {
+            nav,
+            article {
+            width: 100%;
+            height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!---heading-->
+    <header>
+       <h2> Piece of Heaven </h2>
+       <p>Arme el pastel ideal <br>Somos los mejores</p>
+       <form action="./Index.html" id="form2" method="post">
+           <input type="submit" value="home">
+       </form>
+    </header>
+    <section><nav>
+    Llene sus datos
+    <label for="Input1">Primer nombre</label>
+    <br>
+    <input type="text" id="Input1" name="Input1">
+    <br>
+    <label for="Input2">Número de Teléfono</label>
+    <br>
+    <input type="text" id="Input2" name="Input2">
+    <br>
+    <label for="Input3">Correo electrónico</label>
+    <br>
+    <input type="email" id="Input3" name="Input3">
+    <br>
+    <label for="Input4">Descripción general del pastel</label>
+    <br>
+    <input type="text" id="Input4" name="Input4">
+    <br>
+    </nav></section>
+    <section><article>
+    <h3>Combine sus sabores si así lo desea</h3>
+    <input type="checkbox" id="topping1" name="topping_test" value="Chocolate">
+    <label for="topping1">Chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Mermelada">
+    <label for="topping2">Mermelada</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Vainilla</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Fresa">
+    <label for="topping3">Fresa</label>
+
+    <h3>Combine sus sabores si así lo desea</h3>
+    <input type="checkbox" id="topping5" name="topping5" value="Fondant">
+    <label for="topping5">Fondant</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Chantilly">
+    <label for="topping6">Chantilly</label><br>
+    <input type="checkbox" id="topping7" name="topping7" value="Vainilla">
+    <label for="topping3">Vainilla</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Merengue">
+    <label for="topping3">Merengue</label><br>
+    
+    <br>
+    <form action="/accion.js" id="form1" method="post">
+    <input type="submit"><br>
+    </form>
+</article></section>
+    
+    <footer>
+        <p>Dirección: Calle Balderas #27, Centro Histórico, Ciudad de México, Del. Cuauhtémoc, C.P. 06040, México.</p>
+        <p>Teléfono: 01 800 200 2000.</p>
+        <p>Horarios de atención</p>
+        <p> Lunes de 8:00 am a 5:00 pm</p>
+        <p>Sábados: 8:00 am a 12:00 pm</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Piece of heaven</title>
+    <style>
+          * {
+            box-sizing: border-box;
+        }
+        body { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /*Estilo header*/
+        header{
+            background-color: rgb(112, 11, 70);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(88, 0, 0);
+        }
+        nav {
+            float: left;
+            width: 40%;
+            height: 350px;
+            /* only for demonstration, should be removed */
+            background: rgb(226, 52, 29);
+            padding: 20px;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #380724;
+            height: 350px;
+            color: white;
+        }
+        /*Section footer*/
+        footer{
+            background-color: rgb(125, 5, 68);
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+           /* Responsive layout */
+           @media (max-width: 600px) {
+            nav,
+            article {
+            width: 100%;
+            height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!---heading-->
+    <header>
+       <h2> Página de administrador </h2>
+       <p>Arme el pastel ideal <br>Somos los mejores</p>
+       <form action="./Index.html" id="form2" method="post">
+        <input type="submit" value="Salir de administrador">
+    </form>
+    </header>
+    <section><nav>
+        <table border="2">
+        <tr>
+            <th>Ingredientes</th>
+            <th>Cantidad</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Fondant </td>
+            <td>200 gramos </td>
+            <td>Decoración </td>
+        </tr>
+        <tr>
+            <td>Chantilly </td>
+            <td>400 gramos </td>
+            <td>Decoración</td>
+        </tr>
+            <td>Vainilla </td>
+            <td>800 gramos</td>
+            <td>Decoración</td>
+        </tr>
+        <tr>
+            <td>Merengue</td>
+            <td>560 gramos</td>
+            <td>Decoración</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>700 gramos</td>
+            <td>Sabores</td>
+        </tr>
+        <tr>
+            <td>Mermelada</td>
+            <td>500 gramos</td>
+            <td>Sabores</td>
+        </tr>
+        <tr>
+            <td>Vainilla</td>
+            <td>800 gramos</td>
+            <td>Sabores</td>
+        </tr>
+        <tr>
+            <td>Fresa</td>
+            <td>900 gramos</td>
+            <td>Sabores</td>
+        </tr>
+    </table>
+    </nav></section>
+    <section><article>
+    <h3>Pedidos realizados por clientes</h3>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Descripción general del pedido</th>
+            <th>Sabores elegidos</th>
+            <th>Decoraciones elegidas</th>
+          </tr>
+        </thead>
+        <tbody id="valores">
+    
+        </tbody>
+      </table>
+</article></section>
+    
+    <footer>
+    </footer>
+</body>
+</html>
